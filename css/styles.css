@@ -652,10 +652,6 @@ img {
   color: white;
 }
 
-/* .text-per-month {
-  color: #e0e0e0;
-} */
-
-.price-list-item:nth-child(2) > div > div > p:nth-child(2) {
+.text-per-month {
   color: #e0e0e0;
 }
