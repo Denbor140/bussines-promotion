@@ -4,164 +4,302 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <a href="./index.html"
-          ><img src="./img/logo.svg" alt="logo" />Product</a
-        >
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resources.html">Resources</a></li>
+    <header class="pricing-header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo">
+            <svg width="40" height="36">
+              <use href="./img/icon.svg#icon-logo"></use>
+            </svg>
+            Product</a
+          >
+          <ul class="header-ul">
+            <li class="nav-li-item">
+              <a href="./index.html" class="nav-link"
+                ><span class="product-text">Product</span></a
+              >
+            </li>
+            <li class="nav-li-item">
+              <a href="./customers.html" class="nav-link">Customers</a>
+            </li>
+            <li class="nav-li-item">
+              <a href="./pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-li-item">
+              <a href="./resources.html" class="nav-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-button">
+          <li><button type="button" class="signin-btn">Sign In</button></li>
+          <li><button type="button" class="signup-btn">Sign Up</button></li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section class="price">
-        <span>PRICING</span>
-        <h1>Let’s get some real work done here.</h1>
-        <p>
-          Prodict is your perfect solution for working. Get started now for free
-        </p>
-        <ul>
-          <li>
-            <h3>Free</h3>
-            <p>Brief price description</p>
-            <p>0</p>
-            <p>$</p>
-            <p>Per / month</p>
-            <ul>
-              <li>Only 2 Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <h3>Standard</h3>
-            <p>Brief price description</p>
-            <p>5</p>
-            <p>$</p>
-            <p>Per / month</p>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <h3>Premium</h3>
-            <p>Brief price description</p>
-            <p>10</p>
-            <p>$</p>
-            <p>Per / month</p>
-            <ul>
-              <li>10+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-        </ul>
+      <section class="pricing">
+        <div class="container">
+          <p class="pricing-subtitle">PRICING</p>
+          <h1 class="pricing-title">Let’s get some real work done here.</h1>
+          <p class="pricing-text">
+            Prodict is your perfect solution for working. Get started now for
+            free
+          </p>
+          <ul class="price-list">
+            <li class="price-list-item">
+              <h3 class="price-plan">Free</h3>
+              <p class="price-dscr">Brief price description</p>
+              <div class="tax-container">
+                <p class="tax-title">0</p>
+                <div class="tax-right">
+                  <p class="tax-value">$</p>
+                  <p class="tax-per-month">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-include-list">
+                <li class="price-include">Only 2 Operators</li>
+                <li class="price-include">Notifications</li>
+                <li class="price-include">Landing Pages</li>
+              </ul>
+              <button type="button" class="price-btn-container price-btn">
+                Order Now
+              </button>
+            </li>
+            <li class="price-list-item">
+              <h3 class="price-plan text-standart-plan">Standard</h3>
+              <p class="price-dscr text-standart-plan">
+                Brief price description
+              </p>
+              <div class="tax-container">
+                <p class="tax-title text-standart-plan">5</p>
+                <div class="tax-right">
+                  <p class="tax-value text-standart-plan">$</p>
+                  <p class="tax-per-month text-per-month">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-include-list">
+                <li class="price-include text-standart-plan">5+ Operators</li>
+                <li class="price-include text-standart-plan">Notifications</li>
+                <li class="price-include text-standart-plan">Landing Pages</li>
+              </ul>
+              <button type="button" class="price-btn-container price-btn">
+                Order Now
+              </button>
+            </li>
+            <li class="price-list-item">
+              <h3 class="price-plan">Premium</h3>
+              <p class="price-dscr">Brief price description</p>
+              <div class="tax-container">
+                <p class="tax-title">10</p>
+                <div class="tax-right">
+                  <p class="tax-value">$</p>
+                  <p class="tax-per-month">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-include-list">
+                <li class="price-include">10+ Operators</li>
+                <li class="price-include">Notifications</li>
+                <li class="price-include">Landing Pages</li>
+              </ul>
+              <button type="button" class="price-btn-container price-btn">
+                Order Now
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="enterprise">
-        <span>ENTERPRISE</span>
-        <h2>Are you interested in a custom-tailored plan?</h2>
-        <p>
-          Product is a set of advanced features for really large teams with
-          projects.
-        </p>
-        <button type="button">Get in touch with us</button>
+        <div class="container enterprise-container">
+          <p class="enterprise-subtitle">ENTERPRISE</p>
+          <h2 class="enterprise-title">
+            Are you interested in a custom-tailored plan?
+          </h2>
+          <p class="enterprise-text">
+            Product is a set of advanced features for really large teams with
+            projects.
+          </p>
+          <button type="button" class="enterprise-btn enterprise-btn-container">
+            Get in touch with us
+          </button>
+        </div>
       </section>
       <section class="product">
-        <h2>Product is being used with great effects alongside:</h2>
-        <img src="./img/amico.png" alt="amico" width="528" />
-        <ul>
-          <li>
-            <div></div>
-            <h3>Enterpreneur</h3>
-            <p>
-              Product is a great way to help medium and samall enterprise owners
-              achieve their goals
-            </p>
-          </li>
-          <li>
-            <div></div>
-            <h3>Accountants</h3>
-            <p>
-              Whether you are working on contract with clients, or on other key
-              accounting documents, Product is for you
-            </p>
-          </li>
-          <li>
-            <div></div>
-            <h3>Universities</h3>
-            <p>
-              Organize university projects and have documents easily graded
-              online with Product
-            </p>
-          </li>
-        </ul>
+        <div class="container product-container">
+          <h2 class="product-title">
+            Product is being used with great effects alongside:
+          </h2>
+          <img src="./img/amico.png" alt="amico" width="528" />
+          <ul class="product-list">
+            <li class="product-list-item">
+              <div class="product-list-icon">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-01"></use>
+                </svg>
+              </div>
+              <h3 class="product-list-title">Enterpreneur</h3>
+              <p class="product-list-text">
+                Product is a great way to help medium and samall enterprise
+                owners achieve their goals
+              </p>
+            </li>
+            <li class="product-list-item">
+              <div class="product-list-icon">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-04"></use>
+                </svg>
+              </div>
+              <h3 class="product-list-title">Accountants</h3>
+              <p class="product-list-text">
+                Whether you are working on contract with clients, or on other
+                key accounting documents, Product is for you
+              </p>
+            </li>
+            <li class="product-list-item">
+              <div class="product-list-icon">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-05"></use>
+                </svg>
+              </div>
+              <h3 class="product-list-title">Universities</h3>
+              <p class="product-list-text">
+                Organize university projects and have documents easily<br />
+                graded online with Product
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="question">
-        <h2>Frequently asked question</h2>
-        <p>Something is not clear? You need help? Check our FAQ section</p>
-        <ul>
-          <li>What are my payment option?</li>
-          <li>
-            How can I invite collaborator to platform?
-            <p>
-              After creating your account you will have an oppurtunity to create
-              your first project that will be associated withthe collaborators
-              e-mail. An invitation will be sent automatically. Then, invited
-              user will have to confirm his account by e-mail and finish userd
-              onboarding.
-            </p>
-          </li>
-          <li>Can I upgrade my plan?</li>
-          <li>Can I cancel my plan at anytime?</li>
-        </ul>
+        <div class="container question-container">
+          <h2 class="question-title">Frequently asked question</h2>
+          <p class="question-subtitle">
+            Something is not clear? You need help? Check our FAQ section
+          </p>
+          <ul>
+            <li>What are my payment option?</li>
+            <li>
+              How can I invite collaborator to platform?
+              <p>
+                After creating your account you will have an oppurtunity to
+                create your first project that will be associated withthe
+                collaborators e-mail. An invitation will be sent automatically.
+                Then, invited user will have to confirm his account by e-mail
+                and finish userd onboarding.
+              </p>
+            </li>
+            <li>Can I upgrade my plan?</li>
+            <li>Can I cancel my plan at anytime?</li>
+          </ul>
+        </div>
       </section>
-      <div class="promo">
-        <p>
-          Join 100 Compannies who<br />
-          boost their business with<br />
-          Product
-        </p>
-        <button type="button">Get This</button>
-        <img src="./img/graphics.png" alt="graphics" width="351" />
-      </div>
+      <section class="promo">
+        <div class="container promo-container">
+          <div>
+            <p class="promo-text">
+              Join 100 Compannies who boost their business with Product
+            </p>
+            <button type="button" class="promo-button">Get This</button>
+          </div>
+          <img
+            src="./img/promo.png"
+            alt="graphics"
+            width="351"
+            class="promo-img"
+          />
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <a href="./index.html"><img src="./img/logo.svg" alt="logo" />Product</a>
-      <div></div>
-      <p>Resource</p>
-      <ul>
-        <li>About Us</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>FAQ</li>
-      </ul>
-      <p>Legal Stuff</p>
-      <ul>
-        <li>Disclaimer</li>
-        <li>Financing</li>
-        <li>Privacy Policy</li>
-      </ul>
-      <p>knowing you're always on the best energy deal.</p>
-      <input type="text" />
-      <button type="button">Sign up Now</button>
-      <p>Made With Love By Figmaland All Right Reserved</p>
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a href="./index.html" class="footer-logo">
+            <svg width="40" height="36">
+              <use href="./img/icon.svg#icon-logo"></use>
+            </svg>
+            Product</a
+          >
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-middle-left">
+          <p class="middle-left-title">Resource</p>
+          <ul class="middle-left-list">
+            <li><a href="" class="middle-left-link">About Us</a></li>
+            <li><a href="" class="middle-left-link">Blog</a></li>
+            <li><a href="" class="middle-left-link">Contact</a></li>
+            <li><a href="" class="middle-left-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle-right">
+          <p class="middle-right-title">Legal Stuff</p>
+          <ul>
+            <li><a href="" class="middle-right-link">Disclaimer</a></li>
+            <li><a href="" class="middle-right-link">Financing</a></li>
+            <li><a href="" class="middle-right-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="footer-right-title">
+            knowing you're always on the best energy deal.
+          </p>
+          <label class="footer-label">
+            <svg width="19" height="28" class="footer-label-icon">
+              <use href="./img/icon.svg#icon-mobile-screen"></use>
+            </svg>
+            <input
+              class="footer-input"
+              type="text"
+              placeholder="Enter your phone number"
+            />
+          </label>
+          <button type="button" class="footer-btn">Sign up Now</button>
+        </div>
+        <p class="footer-made">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+      </div>
     </footer>
   </body>
 </html>

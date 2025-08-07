@@ -1077,3 +1077,171 @@ img {
   top: -3px;
   right: 13px;
 }
+
+/* PRICING HTML */
+
+.pricing-header {
+  padding-bottom: 50px;
+}
+
+.pricing {
+  margin-bottom: 150px;
+}
+
+.pricing-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 31px;
+}
+
+.pricing-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #22343d;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.pricing-text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 49px;
+}
+
+.enterprise {
+  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+  margin-bottom: 294px;
+}
+
+.enterprise-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 53px 0;
+}
+
+.enterprise-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #22343d;
+  margin-bottom: 26px;
+}
+
+.enterprise-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 21px;
+}
+
+.enterprise-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #22343d;
+  margin-bottom: 39px;
+}
+
+.enterprise-btn-container {
+  border-radius: 8px;
+  width: 224px;
+  height: 44px;
+  background: #02897a;
+  border: none;
+  cursor: pointer;
+}
+
+.enterprise-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.product {
+  margin-bottom: 6px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.product-list {
+  width: 543px;
+  height: 430px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  gap: 32px;
+}
+
+.product-list-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 14px;
+  row-gap: 16px;
+}
+
+.product-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: #f4f5f7;
+}
+
+.product-list-title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #22343d;
+}
+
+.product-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+}
+
+.question {
+  margin-bottom: 150px;
+}
+
+.question-container {
+}
+
+.question-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.question-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #22343d;
+  margin-bottom: 50px;
+  text-align: center;
+}
