@@ -1379,6 +1379,12 @@ svg {
   margin-bottom: 115px;
 }
 
+.customers-work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .customers-work-title {
   font-size: 34px;
   text-align: center;
@@ -1421,4 +1427,17 @@ svg {
 
 .work-item-subtitle {
   line-height: 1.75;
+}
+
+.customers-work-btn {
+  border-radius: 8px;
+  width: 224px;
+  height: 44px;
+  background-color: #02897a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
