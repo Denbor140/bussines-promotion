@@ -76,16 +76,15 @@
             </p>
             <div class="hero-button">
               <button type="button" class="hero-btn-1">Get started</button>
-              <a href="./index.html" class="hero-btn-2"
-                ><img
-                  src="./img/play-icon.svg"
-                  alt="play-icon"
-                  width="20"
-                /><span class="btn-2-text">Watch the Video</span></a
+              <a href="./index.html" class="hero-btn-2">
+                <svg width="16" height="18">
+                  <use href="./img/icon.svg#icon-play"></use>
+                </svg>
+                <span class="btn-2-text">Watch the Video</span></a
               >
             </div>
           </div>
-          <svg width="610" height="555">
+          <svg width="610" height="555" class="hero-img">
             <use href="./img/icon.svg#icon-hero-img"></use>
           </svg>
         </div>
@@ -98,36 +97,44 @@
           </h2>
           <ul class="feature-list">
             <li class="feature-list-item">
-              <svg width="54" height="61" class="feature-icon">
-                <use href="./img/icon.svg#icon-icon-1"></use>
-              </svg>
+              <div class="feature-icon-wrapper">
+                <svg width="11" height="18">
+                  <use href="./img/icon.svg#icon-cursor"></use>
+                </svg>
+              </div>
               <h3 class="feature-card-title">First click tests</h3>
               <p class="feature-card-text">
                 While most people enjoy casino gambling,
               </p>
             </li>
             <li class="feature-list-item">
-              <svg width="54" height="61" class="feature-icon">
-                <use href="./img/icon.svg#icon-icon-2"></use>
-              </svg>
+              <div class="feature-icon-wrapper">
+                <svg width="18" height="18">
+                  <use href="./img/icon.svg#icon-ziczag"></use>
+                </svg>
+              </div>
               <h3 class="feature-card-title">Design surveys</h3>
               <p class="feature-card-text">
                 Sports betting, lottery and bingo playing for the fun
               </p>
             </li>
             <li class="feature-list-item">
-              <svg width="54" height="61" class="feature-icon">
-                <use href="./img/icon.svg#icon-icon-3"></use>
-              </svg>
+              <div class="feature-icon-wrapper">
+                <svg width="16" height="18">
+                  <use href="./img/icon.svg#icon-heart"></use>
+                </svg>
+              </div>
               <h3 class="feature-card-title">Preference tests</h3>
               <p class="feature-card-text">
                 The Myspace page defines the individual.
               </p>
             </li>
             <li class="feature-list-item">
-              <svg width="54" height="61" class="feature-icon">
-                <use href="./img/icon.svg#icon-icon-4"></use>
-              </svg>
+              <div class="feature-icon-wrapper">
+                <svg width="14" height="18">
+                  <use href="./img/icon.svg#icon-time"></use>
+                </svg>
+              </div>
               <h3 class="feature-card-title">Five second tests</h3>
               <p class="feature-card-text">
                 Personal choices and the overall personality of the person.
@@ -164,14 +171,14 @@
               </li>
             </ul>
           </div>
-          <svg width="540" height="500">
+          <svg width="540" height="500" class="benefits-img">
             <use href="./img/icon.svg#icon-management-img"></use>
           </svg>
         </div>
       </section>
       <section class="support">
         <div class="container support-container">
-          <svg width="540" height="500">
+          <svg width="540" height="500" class="benefits-img">
             <use href="./img/icon.svg#icon-support-img"></use>
           </svg>
           <div class="support-text-group">
@@ -184,26 +191,32 @@
             </p>
             <ul class="support-list">
               <li class="support-list-item">
-                <svg width="35" height="35">
-                  <use href="./img/icon.svg#icon-icon-yellow"></use>
-                </svg>
+                <div class="support-img-wrapper">
+                  <svg width="16" height="12" class="support-icon">
+                    <use href="./img/icon.svg#icon-path"></use>
+                  </svg>
+                </div>
                 <p class="support-li-subtitle">
                   Never worry about overpaying for your energy again.
                 </p>
               </li>
               <li class="support-list-item">
-                <svg width="35" height="35">
-                  <use href="./img/icon.svg#icon-icon-red"></use>
-                </svg>
+                <div class="support-img-wrapper">
+                  <svg width="16" height="12" class="support-icon">
+                    <use href="./img/icon.svg#icon-path"></use>
+                  </svg>
+                </div>
                 <p class="support-li-subtitle">
                   We will only switch you to energy companies that we trust and
                   will treat you right
                 </p>
               </li>
               <li class="support-list-item">
-                <svg width="35" height="35">
-                  <use href="./img/icon.svg#icon-icon-blue"></use>
-                </svg>
+                <div class="support-img-wrapper">
+                  <svg width="16" height="12" class="support-icon">
+                    <use href="./img/icon.svg#icon-path"></use>
+                  </svg>
+                </div>
                 <p class="support-li-subtitle">
                   We track the markets daily and know where the savings are.
                 </p>
@@ -239,7 +252,7 @@
               </li>
             </ul>
           </div>
-          <svg width="540" height="500">
+          <svg width="540" height="500" class="benefits-img">
             <use href="./img/icon.svg#icon-collaboration-img"></use>
           </svg>
         </div>
@@ -254,25 +267,41 @@
             </p>
             <ul class="staff-list">
               <li class="staff-list-item">
-                <img src="./img/avatar.png" alt="avatar-girl" width="98" />
+                <img
+                  src="./img/product/avatar.png"
+                  alt="avatar-girl"
+                  width="98"
+                />
                 <p class="staff-commentary staff-commentary-container">
                   I can take care of your pitch
                 </p>
               </li>
               <li class="staff-list-item">
-                <img src="./img/avatar1.png" alt="avatar-girl-2" width="98" />
+                <img
+                  src="./img/product/avatar1.png"
+                  alt="avatar-girl-2"
+                  width="98"
+                />
                 <p class="staff-commentary staff-commentary-container">
                   I can prototype your app
                 </p>
               </li>
               <li class="staff-list-item">
-                <img src="./img/avatar2.png" alt="avatar-men" width="98" />
+                <img
+                  src="./img/product/avatar2.png"
+                  alt="avatar-men"
+                  width="98"
+                />
                 <p class="staff-commentary staff-commentary-container">
                   I can take care of your pitch
                 </p>
               </li>
               <li class="staff-list-item">
-                <img src="./img/avatar3.png" alt="avatar-men-2" width="98" />
+                <img
+                  src="./img/product/avatar3.png"
+                  alt="avatar-men-2"
+                  width="98"
+                />
                 <p class="staff-commentary staff-commentary-container">
                   I can help marketing strategy
                 </p>
@@ -408,14 +437,18 @@
           <ul class="feedback-list">
             <li class="feedback-list-item">
               <svg class="icon-feadback" width="107" height="18">
-                <use href="./img/icon.svg#icon-feadback"></use>
+                <use href="./img/icon.svg#icon-stars"></use>
               </svg>
               <p class="feedback-review">
                 Product helps you see how many more days you need to work to
                 reach your financial goal..
               </p>
               <div class="reviewer-container">
-                <img src="./img/Ellipse2.png" alt="client-1" width="50" />
+                <img
+                  src="./img/product/Ellipse1.png"
+                  alt="client-1"
+                  width="50"
+                />
                 <div class="feedback-reviewer">
                   <h3 class="feedback-author">Wahid Ari</h3>
                   <p class="author-prof">Designer</p>
@@ -424,14 +457,18 @@
             </li>
             <li class="feedback-list-item">
               <svg class="icon-feadback" width="107" height="18">
-                <use href="./img/icon.svg#icon-feadback"></use>
+                <use href="./img/icon.svg#icon-stars"></use>
               </svg>
               <p class="feedback-review">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
               <div class="reviewer-container">
-                <img src="./img/Ellipse2-1.png" alt="client-2" width="50" />
+                <img
+                  src="./img/product/Ellipse2.png"
+                  alt="client-2"
+                  width="50"
+                />
                 <div class="feedback-reviewer">
                   <h3 class="feedback-author">Wahid Ari</h3>
                   <p class="author-prof">Designer</p>
@@ -440,14 +477,18 @@
             </li>
             <li class="feedback-list-item">
               <svg class="icon-feadback" width="107" height="18">
-                <use href="./img/icon.svg#icon-feadback"></use>
+                <use href="./img/icon.svg#icon-stars"></use>
               </svg>
               <p class="feedback-review">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
               <div class="reviewer-container">
-                <img src="./img/Ellipse2-2.png" alt="client-3" width="50" />
+                <img
+                  src="./img/product/Ellipse3.png"
+                  alt="client-3"
+                  width="50"
+                />
                 <div class="feedback-reviewer">
                   <h3 class="feedback-author">Wahid Ari</h3>
                   <p class="author-prof">Designer</p>
