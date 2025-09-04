@@ -4,63 +4,376 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resources</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./img/logo.svg" alt="logo" />Product</a
-        >
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resources.html">Resources</a></li>
+    <header class="header-resources">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo">
+            <svg width="40" height="36">
+              <use href="./img/icon.svg#icon-logo"></use>
+            </svg>
+            Product</a
+          >
+          <ul class="header-ul">
+            <li class="nav-li-item">
+              <a href="./index.html" class="nav-link"
+                ><span class="product-text">Product</span></a
+              >
+            </li>
+            <li class="nav-li-item">
+              <a href="./pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-li-item">
+              <a href="./customers.html" class="nav-link">Customers</a>
+            </li>
+            <li class="nav-li-item">
+              <a href="./resources.html" class="nav-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-button">
+          <li class="header-btn-list">
+            <button type="button" class="signin-btn">Sign In</button>
+          </li>
+          <li class="header-btn-list">
+            <button type="button" class="signup-btn">Sign Up</button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Great Business made with Product.</h1>
-        <p>
-          Build better customer relationships easily messaging that provides a
-          more personal experience for you and your customers.
-        </p>
-        <input type="text" />
-        <button type="button">Join Now</button>
-        <div>
-          <img src="./img/Group1451.png" alt="1451" width="121" />
-          <p>Join over <span>4,000</span>+ other</p>
+      <section class="hero-resources">
+        <div class="container">
+          <div class="hero-resources-container">
+            <div class="hero-resources-text">
+              <h1 class="hero-resources-title">
+                Great Business made with Product.
+              </h1>
+              <p class="hero-resources-subtitle">
+                Build better customer relationships easily messaging that
+                provides a more personal experience for you and your customers.
+              </p>
+              <form class="hero-resources-form">
+                <input
+                  class="hero-resources-input"
+                  type="text"
+                  placeholder="Enter your email adress"
+                />
+                <button class="hero-resources-btn" type="submit">
+                  Join Now
+                </button>
+              </form>
+              <div class="hero-resources-feedback">
+                <img
+                  src="./img/resources/feedback-people.png"
+                  alt="feedback-people"
+                  width="121"
+                  height="50"
+                />
+                <p class="resources-feedback-title">
+                  Join over
+                  <span class="resources-feedback-quantity">4,000</span>+ other
+                </p>
+              </div>
+            </div>
+            <img
+              src="./img/resources/resources-img.png"
+              alt="resources-img"
+              width="541"
+              height="482"
+            />
+          </div>
         </div>
-        <img src="./img/Group1452.png" alt="1452" width="541" />
+      </section>
+
+      <section class="latest-stories" id="latest-stories">
+        <div class="container latest-stories-container">
+          <h2 class="latest-stories-title">Latest Stories</h2>
+          <p class="latest-stories-subtitle">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <ul class="latest-stories-list">
+            <li class="latest-stories-item">
+              <img
+                src="./img/resources/stories/Placeholder-1.png"
+                alt="Placeholder-1"
+                width="348"
+              />
+              <div class="latest-stories-reviewer">
+                <p class="stories-reviewer">
+                  By <span class="stories-reviewer-name">Wahid Ari</span> | 03
+                  March 2019
+                </p>
+                <h3 class="stories-reviewer-title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
+            </li>
+            <li class="latest-stories-item">
+              <img
+                src="./img/resources/stories/Placeholder-2.png"
+                alt="Placeholder-2"
+                width="348"
+              />
+              <div class="latest-stories-reviewer">
+                <p class="stories-reviewer">
+                  By <span class="stories-reviewer-name">Wahid Ari</span> | 03
+                  March 2019
+                </p>
+                <h3 class="stories-reviewer-title">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
+            </li>
+            <li class="latest-stories-item">
+              <img
+                src="./img/resources/stories/Placeholder-3.png"
+                alt="Placeholder-3"
+                width="348"
+              />
+              <div class="latest-stories-reviewer">
+                <p class="stories-reviewer">
+                  By <span class="stories-reviewer-name">Wahid Ari</span> | 03
+                  March 2019
+                </p>
+                <h3 class="stories-reviewer-title">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
+            </li>
+            <li class="latest-stories-item">
+              <img
+                src="img/resources/stories/Placeholder-4.png"
+                alt="Placeholder-4"
+                width="348"
+              />
+              <div class="latest-stories-reviewer">
+                <p class="stories-reviewer">
+                  By <span class="stories-reviewer-name">Wahid Ari</span> | 03
+                  March 2019
+                </p>
+                <h3 class="stories-reviewer-title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
+            </li>
+            <li class="latest-stories-item">
+              <img
+                src="img/resources/stories/Placeholder-5.png"
+                alt="Placeholder-5"
+                width="348"
+              />
+              <div class="latest-stories-reviewer">
+                <p class="stories-reviewer">
+                  By <span class="stories-reviewer-name">Wahid Ari</span> | 03
+                  March 2019
+                </p>
+                <h3 class="stories-reviewer-title">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
+            </li>
+            <li class="latest-stories-item">
+              <img
+                src="img/resources/stories/Placeholder-6.png"
+                alt="Placeholder-6"
+                width="350"
+              />
+              <div class="latest-stories-reviewer">
+                <p class="stories-reviewer">
+                  By <span class="stories-reviewer-name">Wahid Ari</span> | 03
+                  March 2019
+                </p>
+                <h3 class="stories-reviewer-title">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
+            </li>
+          </ul>
+          <a href="#latest-stories" class="more-stories-link"
+            >More Stories
+            <svg width="20" height="20" class="stories-icon">
+              <use href="./img/icon.svg#icon-circle-right"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container contacts-container">
+          <h2 class="contacts-title">Contact Us</h2>
+          <p class="contacts-subtitle">
+            Need more detailed information? Get in touch with us.
+          </p>
+          <ul class="contacts-social-list">
+            <li class="contacts-social-item">
+              <a href="" class="contacts-social-link">
+                <svg width="30" height="30">
+                  <use href="./img/icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-social-item">
+              <a href="" class="contacts-social-link">
+                <svg width="30" height="30">
+                  <use href="./img/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-social-item">
+              <a href="" class="contacts-social-link">
+                <svg width="30" height="30">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <iframe
+            class="contacts-map"
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3153.580429166507!2d-122.4237962!3d37.7764351!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1757004590350!5m2!1sru!2sua"
+            width="871"
+            height="343"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form class="contacts-form">
+            <p class="contacts-form-title">Send a message</p>
+            <input
+              class="contacts-form-input"
+              type="text"
+              placeholder="Your Name"
+              name="user-name"
+            />
+            <input
+              class="contacts-form-input"
+              type="email"
+              placeholder="Your Email"
+              name="user-email"
+            />
+            <textarea
+              class="contacts-form-textarea"
+              name=""
+              id=""
+              placeholder="Your Message"
+              name="user-message"
+            ></textarea>
+            <button class="contacts-form-btn" type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="./index.html"><img src="./img/logo.svg" alt="logo" />Product</a>
-      <div></div>
-      <p>Resource</p>
-      <ul>
-        <li>About Us</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>FAQ</li>
-      </ul>
-      <p>Legal Stuff</p>
-      <ul>
-        <li>Disclaimer</li>
-        <li>Financing</li>
-        <li>Privacy Policy</li>
-      </ul>
-      <p>knowing you're always on the best energy deal.</p>
-      <input type="text" />
-      <button type="button">Sign up Now</button>
-      <p>Made With Love By Figmaland All Right Reserved</p>
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a href="./index.html" class="footer-logo">
+            <svg width="40" height="36">
+              <use href="./img/icon.svg#icon-logo"></use>
+            </svg>
+            Product</a
+          >
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-left">
+            <p class="footer-nav-title">Resource</p>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">About Us</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">Blog</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">Contact</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-right">
+            <p class="footer-nav-title">Legal Stuff</p>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">Disclaimer</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">Financing</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-right">
+          <p class="footer-right-title">
+            knowing you're always on the best energy deal.
+          </p>
+          <form class="footer-form">
+            <label class="footer-label">
+              <svg width="18" height="28" class="footer-label-icon">
+                <use href="./img/icon.svg#icon-mobile-screen"></use>
+              </svg>
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Enter your phone number"
+              />
+            </label>
+            <button type="button" class="footer-btn">Sign up Now</button>
+          </form>
+        </div>
+        <p class="footer-made">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+      </div>
     </footer>
   </body>
 </html>
