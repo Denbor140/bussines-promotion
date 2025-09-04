@@ -91,19 +91,37 @@ svg {
   gap: 30px;
 }
 
-.product-text {
-  font-weight: 600;
-}
-
 .nav-link {
   color: #22343d;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   padding: 26px 0;
-  transition-property: color;
+  transition-property: color, font-weight;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  height: 2px;
+  width: 100%;
+  background-color: #02897a;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms ease-in-out;
+}
+
+.nav-link:not(.active):hover::after {
+  transform: scaleX(1);
+}
+
+.nav-link.active {
+  font-weight: 600;
 }
 
 .nav-link:hover,
@@ -219,9 +237,27 @@ svg {
   height: 53px;
   border: none;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  position: relative;
+}
+
+.hero-btn-1::after {
+  content: '';
+  position: absolute;
+  left: 44px;
+  bottom: 16px;
+  height: 2px;
+  width: 90px;
+  background-color: #fff;
+  transform: scaleX(0);
+
+  transition: transform 350ms ease-in-out;
+}
+
+.hero-btn-1:not(.active):hover::after {
+  transform: scaleX(1);
 }
 
 .hero-btn-2 {
@@ -1655,9 +1691,10 @@ svg {
   font-weight: 600;
   color: #fff;
   position: absolute;
-  top: 8px;
+  top: 50%;
   right: 8px;
   cursor: pointer;
+  transform: translateY(-50%);
 }
 
 .hero-resources-feedback {
