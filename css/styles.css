@@ -124,6 +124,14 @@ svg {
   font-weight: 600;
 }
 
+.nav-link.active:hover {
+  color: inherit;
+}
+
+.nav-link.active:hover::after {
+  transform: scaleX(1);
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: #02897a;
@@ -189,7 +197,16 @@ svg {
 .price-btn-container:focus,
 .footer-btn:hover,
 .footer-btn:focus {
-  background-color: #1bb6a4;
+  background-color: #03a38c;
+}
+
+.signup-btn:active,
+.hero-btn-1:active,
+.feature-btn:active,
+.staff-btn:active,
+.price-btn-container:active,
+.footer-btn:active {
+  background-color: #027367;
 }
 
 /* HERO */
@@ -252,7 +269,6 @@ svg {
   width: 90px;
   background-color: #fff;
   transform: scaleX(0);
-
   transition: transform 350ms ease-in-out;
 }
 
@@ -365,6 +381,23 @@ svg {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  position: relative;
+}
+
+.feature-btn::after {
+  content: '';
+  position: absolute;
+  left: 35px;
+  bottom: 16px;
+  height: 2px;
+  width: 105px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 350ms ease-in-out;
+}
+
+.feature-btn:not(.active):hover::after {
+  transform: scaleX(1);
 }
 
 /* BUSIneSS */
