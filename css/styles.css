@@ -161,7 +161,7 @@ svg {
   padding: 19px 0;
 }
 
-.signin-btn {
+.sign-in-btn {
   background-color: #fff;
   font-weight: 600;
   font-size: 16px;
@@ -176,7 +176,7 @@ svg {
   transition-timing-function: ease-in-out;
 }
 
-.signup-btn {
+.sign-up-btn {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
