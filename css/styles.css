@@ -115,8 +115,21 @@ svg {
   transform-origin: left;
   transition: transform 350ms ease-in-out;
 }
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  height: 2px;
+  width: 100%;
+  background-color: #02897a;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 350ms ease-in-out;
+}
 
-.nav-link:not(.active):hover::after {
+.nav-link:not(.active):hover::after,
+.nav-link:not(.active):hover::before {
   transform: scaleX(1);
 }
 
@@ -257,22 +270,25 @@ svg {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+}
+
+.hero-btn-text {
   position: relative;
 }
 
-.hero-btn-1::after {
+.hero-btn-text::after {
   content: '';
   position: absolute;
-  left: 44px;
-  bottom: 16px;
+  left: 0;
+  bottom: 0;
   height: 2px;
-  width: 90px;
+  width: 100%;
   background-color: #fff;
   transform: scaleX(0);
   transition: transform 350ms ease-in-out;
 }
 
-.hero-btn-1:not(.active):hover::after {
+.hero-btn-1:hover .hero-btn-text::after {
   transform: scaleX(1);
 }
 
@@ -283,19 +299,35 @@ svg {
 }
 
 .btn-2-text {
+  position: relative;
   font-weight: 600;
   font-size: 16px;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #02897a;
-  transition-property: color;
+  transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
 
+.btn-2-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #03a38c;
+  transform: scaleX(0);
+  transition: transform 350ms ease-in-out;
+}
+
+.hero-btn-2:hover .btn-2-text::after {
+  transform: scaleX(1);
+}
+
 .btn-2-text:hover,
 .btn-2-text:focus {
-  color: #1bb6a4;
+  color: #03a38c;
 }
 
 .hero-img {
@@ -1009,7 +1041,8 @@ svg {
   gap: 10px;
   background-color: #02897a;
   border-radius: 32px;
-  margin-left: 143px;
+  max-width: 968px;
+  margin: 0 auto;
 }
 
 .promo-left-container {
