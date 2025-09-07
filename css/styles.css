@@ -191,15 +191,15 @@ svg {
   transition-timing-function: ease-in-out;
 }
 
-.signin-btn:hover,
-.signin-btn:focus,
+.sign-in-btn:hover,
+.sign-in-btn:focus,
 .promo-button:hover,
 .promo-button:focus {
   background-color: #dfe0e2;
 }
 
-.signup-btn:hover,
-.signup-btn:focus,
+.sign-up-btn:hover,
+.sign-up-btn:focus,
 .hero-btn-1:hover,
 .hero-btn-1:focus,
 .feature-btn:hover,
@@ -213,13 +213,17 @@ svg {
   background-color: #03a38c;
 }
 
-.signup-btn:active,
+.sig-nup-btn:active,
 .hero-btn-1:active,
 .feature-btn:active,
 .staff-btn:active,
 .price-btn-container:active,
 .footer-btn:active {
   background-color: #027367;
+}
+
+.burger-menu-btn {
+  display: none;
 }
 
 /* HERO */
